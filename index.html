@@ -530,7 +530,7 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
  
 
     <script type="text/javascript">
-        //
+        //https://ljaureguil.github.io/Shop_Projects/
  
         Editor.style.display='none';
         function getPaht(file) {
@@ -610,7 +610,8 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
         }
         var bsp = false,
             comando = "";
-        var nota = ""
+        var nota = "";
+/*
         navigator.mediaDevices.getUserMedia({
             audio: true
         })
@@ -652,7 +653,7 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
         });
 
         words.appendChild(p);
-                    /* JS comes here */
+                 
                     //  runSpeechRecognition();
                 } catch (e) {
                     alert(e)
@@ -667,7 +668,7 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
             alert('No mic for you!');
             // runSpeechRecognition()
         });
-
+*/
 
         var pr1, pr2, pr3, blight = false,
             vrmode = false,
@@ -1004,13 +1005,13 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
                     if (o.gz != 0) oo.rotateZ(o.gz)
                 }
             }
-            if (blight) {
+         //   if (blight) {
              //   light.position.y += 0.005;
              //   light.position.z += 0.0080105;
                    light4.position.x = Math.sin(time * 1.9101013) * 400.00;
                 light4.position.y = Math.cos(time * 1.561017) * 400.2;
                 light4.position.z = -Math.sin(time * -1.252015) * 400.1;
-            }
+          //  }
             if (aranim.length > 0) {
                 for (var i = 2; i < aranim.length; i++) {
                     var o = aranim[i];
@@ -2040,9 +2041,14 @@ f <input type="range" id="rafa" value=1 min=0 step=.01 max=5 oninput="eyes.name.
             var s="";
             for(var i=0;i<ob.length;i++){
             var p=ob[i].name;
+            if(p==="grase"){ //  alert(JSON.stringify(ob[i]));
+                eval(ob[i].content);return}
+         
             s+="<option>"+p+"</option>"
             }
             sproyw.innerHTML=s;
+
+
         
          })
 
